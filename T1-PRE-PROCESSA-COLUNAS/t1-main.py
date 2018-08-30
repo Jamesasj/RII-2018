@@ -41,7 +41,7 @@ for arq in onlyfiles:
 
 
 np.savetxt("arquivosaida",  vetor, delimiter=' ', fmt='%1.2f')
-os.system('rm *.dat')
-print ('Clean work data.')
+#os.system('rm *.dat')
+#print ('Clean work data.')
 
 print("Resultado do processamento no arquivosaida no diretorio corrente.")  

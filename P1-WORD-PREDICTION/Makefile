@@ -20,11 +20,11 @@ all: 	executa
 
 
 compila:	
-	python main.py
+	python p1-main.py
 	
 
 executa:
-	python main.py > arquivosaida
+	python p1-main.py > arquivosaida
 	
 
 
