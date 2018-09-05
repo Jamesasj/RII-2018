@@ -1,9 +1,7 @@
 # Shell to use with Make
 SHELL := /bin/bash
 
-### P-1 Proponha uma estratégia para predição da próxima palavra pn, dado uma
-### sequência de N outras palavras anteriores {p0, p1,..., pn−1}. Suponha, inicialmente,
-### que N ≤ 3. Submeta seus códigos, dados e makefile necessários para testes em uma máquina Linux.a
+### Indexa as respostas de verificacao de links
 ### Discplina RII - Aluno: Wesley Pereira da Silva
 
 # Set important Paths
