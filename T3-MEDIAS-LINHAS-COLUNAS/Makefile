@@ -14,16 +14,16 @@ PYTHONPATH := $(LOCALPATH)/
 help:
 	@echo "    executa"
 	@echo "        Processa o arquivo arquivosaida no diretorio corrente."
-	
+
 all: 	compila executa
 
 
 compila:	executa clear
-	
+
 
 executa:
 	Rscript Westrix.r
-
-
+	tr '\n' ' ' < column-mean.dat > file.tmp
+	mv file.tmp column-mean.dat
 clear:
 	rm column-mean.dat row-mean.dat

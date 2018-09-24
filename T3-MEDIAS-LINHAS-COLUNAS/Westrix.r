@@ -31,7 +31,7 @@ for (i in 1:37)
 }
 
 jpeg(paste("/media/wesleyz/HD1Tera/DADOS/000-git/000-2018/RII-2018/T3-MEDIAS-LINHAS-COLUNAS/",'correlacao',".jpg"), width = 8, height = 8, units = 'in', res = 350)
-corrplot.mixed(matValores, lower.col = "black", number.cex = .45,  width = 8, height = 8, units = 'in', res = 350)
+corrplot.mixed(matValores, lower.col = "black", number.cex = .45,  width = 8, height = 8, units = 'in', res = 500)
 corrplot(matValores,  width = 8, height = 8, units = 'in', res = 350)
 #dev.off()
 
