@@ -13,14 +13,14 @@ write.table(mediaRow, file = "row-mean.dat", fileEncoding = "")
 
 write.csv(mediaCol, file = "column-mean.dat", fileEncoding = "")
 
-matValores <- matrix(NA, 17, 17)
+matValores <- matrix(NA, 37, 37)
 
 
-for (i in 1:17)
+for (i in 1:37)
   {
-    omega  = as.numeric(unlist(matriz[,i]))
-    for (j in 1:17){
-        teta  = as.numeric(unlist(matriz[,j])) 
+    omega  = as.numeric(unlist(matriz[i,]))
+    for (j in 1:37){
+        teta  = as.numeric(unlist(matriz[j,])) 
         # print(omega)
         # print(teta)
         cat("correlacao", i, j) 
@@ -30,10 +30,10 @@ for (i in 1:17)
     }
 }
 
-jpeg(paste("/media/wesleyz/HD1Tera/DADOS/000-git/000-2018/RII-2018/T3-MEDIAS-LINHAS-COLUNAS/",'correlacao',".jpg"))
-corrplot.mixed(matValores, lower.col = "black", number.cex = .6)
-corrplot(matValores)
-dev.off()
+jpeg(paste("/media/wesleyz/HD1Tera/DADOS/000-git/000-2018/RII-2018/T3-MEDIAS-LINHAS-COLUNAS/",'correlacao',".jpg"), width = 8, height = 8, units = 'in', res = 350)
+corrplot.mixed(matValores, lower.col = "black", number.cex = .45,  width = 8, height = 8, units = 'in', res = 350)
+corrplot(matValores,  width = 8, height = 8, units = 'in', res = 350)
+#dev.off()
 
 
 
